@@ -2,7 +2,7 @@
 
 A simple React TypeScript portfolio project that generates random quotes using the Quotable API.
 
-![Random Quote Generator Demo](demo.gif)
+[try it out](https://vaibhav1324.github.io/quotes-generator/)
 
 ## Technologies Used
 
