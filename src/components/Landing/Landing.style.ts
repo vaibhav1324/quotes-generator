@@ -9,13 +9,24 @@ import loadingAnimation from 'assets/loading.json';
 const MotionFlex = motion(Flex);
 const MotionText = motion(Text);
 
-export const Container = chakraStyled(Flex, {
+export const Container = chakraStyled(MotionFlex as any, {
   flex: 1,
   align: 'center',
   justify: 'center',
   direction: 'column',
   bg: 'primary.500',
   p: { base: '20px', md: '50px' },
+  animate: {
+    backgroundColor: [
+      '#ff006e',
+      '#AA6BB7',
+      '#4cc9f0',
+      '#06d6a0',
+      '#9ef01a',
+      '#ffff3f',
+    ],
+  },
+  transition: { yoyo: Infinity, duration: 18 },
 });
 
 export const LottieContainer = chakraStyled(MotionFlex as any, {
