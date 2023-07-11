@@ -7,11 +7,13 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { QueryClientProvider } from 'react-query';
 
 import Landing from 'components/Landing';
+import GhButton from 'components/GhButton';
 
 const App: React.FC = () => (
   <ChakraProvider theme={theme}>
     <QueryClientProvider client={queryClient}>
       <Landing />
+      <GhButton />
     </QueryClientProvider>
   </ChakraProvider>
 );
