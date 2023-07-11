@@ -6,6 +6,8 @@ import * as serviceWorker from './serviceWorker';
 
 import App from './App';
 
+import './index.css';
+
 const container = document.getElementById('root');
 
 if (!container) {

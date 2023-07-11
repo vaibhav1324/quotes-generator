@@ -6,10 +6,12 @@ import { ChakraProvider } from '@chakra-ui/react';
 
 import { QueryClientProvider } from 'react-query';
 
+import Landing from 'components/Landing';
+
 const App: React.FC = () => (
   <ChakraProvider theme={theme}>
     <QueryClientProvider client={queryClient}>
-      <p>Landing</p>
+      <Landing />
     </QueryClientProvider>
   </ChakraProvider>
 );
