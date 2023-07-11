@@ -11,9 +11,15 @@ const Landing: FC<LandingProps> = () => {
   const queryKey = ['fetch-random-quote'];
   const queryFn = () => getRandomQuote();
 
-  const { data, isError, isLoading } = useQuery(queryKey, queryFn);
+  const { data, isError, isLoading, isFetching } = useQuery(queryKey, queryFn);
 
-  return <LandingView quote={data} isLoading={isLoading} isError={isError} />;
+  return (
+    <LandingView
+      quote={data}
+      isError={isError}
+      isLoading={isLoading || isFetching}
+    />
+  );
 };
 
 export default Landing;
