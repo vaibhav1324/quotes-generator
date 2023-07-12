@@ -7,7 +7,7 @@ export const Container = chakraStyled(Flex, {
   bottom: '20px',
   align: 'center',
   justify: 'center',
-  position: 'absolute',
+  position: 'fixed',
   borderRadius: '10px',
 });
 
